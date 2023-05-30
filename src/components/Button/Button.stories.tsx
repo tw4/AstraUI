@@ -1,6 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Button from "./Button";
+import { ButtonVariant } from "./Button-types";
 
 export default {
   title: "Components/Button",
@@ -14,8 +15,22 @@ Default.args = {
   children: "Button",
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
+export const tinted = Template.bind({});
+tinted.args = {
   children: "Button",
-  disable: true,
+  variant: ButtonVariant.tinted,
 };
+
+export const plain = Template.bind({});
+plain.args = {
+  children: "Button",
+  variant: ButtonVariant.plain,
+};
+
+export const disable = Template.bind({});
+disable.args = {
+  children: "Button",
+  variant: ButtonVariant.disable,
+};
+
+<Button variant="disable">test</Button>;
