@@ -23,7 +23,9 @@ export default [
       },
     ],
     plugins: [
-      resolve(),
+      resolve({
+        browser: true, // fix: Module not found: Error: Can't resolve 'stream'
+      }),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
     ],
