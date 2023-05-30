@@ -13,10 +13,6 @@ const variants = {
     &:focus {
       background-color: ${ThemePrimaryColor.focus};
     }
-    &:active {
-      outline-style: solid;
-      outline-color: ${ThemePrimaryColor.default};
-    }
     &:disabled {
       cursor: default;
       outline-style: none;
@@ -27,7 +23,7 @@ const variants = {
   `,
   ghost: css`
     background-color: transparent;
-    border: 1px solid ${ThemePrimaryColor.default};
+    border: 2px solid ${ThemePrimaryColor.default};
     color: ${ThemePrimaryColor.default};
     &:hover {
       border-color: ${ThemePrimaryColor.hover};
@@ -37,10 +33,6 @@ const variants = {
       border-color: ${ThemePrimaryColor.focus};
       color: ${ThemePrimaryColor.textLight};
       background-color: ${ThemePrimaryColor.focus};
-    }
-    &:active {
-      outline-style: solid;
-      outline-color: ${ThemePrimaryColor.focus};
     }
     &:disabled {
       cursor: default;
@@ -65,9 +57,6 @@ const variants = {
       background-color: ${ThemePrimaryColor.focus};
       border-color: ${ThemePrimaryColor.textLight};
     }
-    &:active {
-      border-color: ${ThemePrimaryColor.focus};
-    }
     &:disabled {
       cursor: default;
       color: ${ThemePrimaryColor.default};
@@ -87,10 +76,6 @@ const variants = {
     &:focus {
       background-color: ${ThemePrimaryColor.focus};
     }
-    &:active {
-      outline-style: solid;
-      outline-color: ${ThemePrimaryColor.focus};
-    }
     &:disabled {
       cursor: default;
       background-color: ${ThemePrimaryColor.default};
@@ -106,6 +91,7 @@ export const StyledButton = styled.button<ButtonProps>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition-duration: 0.2s;
   padding: ${(props) =>
     props.size && props.size === Size.small
       ? SizeValue.small
@@ -135,4 +121,16 @@ export const StyledButton = styled.button<ButtonProps>`
       : props.variant === ButtonVariant.circle
       ? variants.circle
       : null}
+  &:hover {
+    ${(props) => (props._hover ? props._hover : null)}
+  }
+  &:focus {
+    ${(props) => (props._focus ? props._focus : null)}
+  }
+  &:active {
+    ${(props) => (props._active ? props._active : null)}
+  }
+  &:disabled {
+    ${(props) => (props._disabled ? props._disabled : null)}
+  }
 `;

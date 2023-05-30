@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { CSSProperties, FC } from "react";
 import { ButtonProps, ButtonVariant } from "./Button-types";
 import { StyledButton } from "./Button-styles";
 
@@ -7,6 +7,10 @@ const Button: FC<ButtonProps> = ({
   size,
   children,
   variant,
+  _hover,
+  _active,
+  _focus,
+  _disabled,
   disabled,
   ...rest
 }) => {
@@ -15,6 +19,10 @@ const Button: FC<ButtonProps> = ({
       disabled={disabled}
       size={size}
       fullWidth={fullWidth}
+      _hover={_hover}
+      _active={_active}
+      _focus={_focus}
+      _disabled={_disabled}
       variant={variant ? variant : ButtonVariant.primary}
       {...rest}>
       {children}
