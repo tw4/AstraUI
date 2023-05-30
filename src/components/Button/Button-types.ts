@@ -1,22 +1,17 @@
-import { CSSProperties, HTMLAttributes, ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
+import { Size } from "../theme/theme-enum";
 
 export type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
-  variant?: "filled" | "tinted" | "plain" | "disable" | ButtonVariant;
+  variant?: "primary" | "ghost" | "text" | "circle" | ButtonVariant;
+  disabled?: boolean;
   children: ReactNode;
   fullWidth?: boolean;
-  size?: "small" | "medium" | "large" | ButtonSize;
-  sx?: CSSProperties;
+  size?: "small" | "medium" | "large" | Size;
 };
 
 export enum ButtonVariant {
-  filled = "filled",
-  tinted = "tinted",
-  plain = "plain",
-  disable = "disable",
-}
-
-export enum ButtonSize {
-  small = "small",
-  medium = "medium",
-  large = "large",
+  primary = "primary",
+  ghost = "ghost",
+  text = "text",
+  circle = "circle",
 }
