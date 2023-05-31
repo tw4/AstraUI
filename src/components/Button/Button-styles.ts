@@ -1,6 +1,6 @@
-import { ThemePrimaryColor } from "../theme/theme";
+import { ThemePrimaryColor } from "../../theme/theme";
 import { ButtonProps, ButtonVariant } from "./Button-types";
-import { FontSizeValue, Size, SizeValue } from "../theme/theme-enum";
+import { FontSizeValue, SizeKey, SizeValue } from "../../theme/theme-enum";
 import styled, { css } from "styled-components";
 
 const variants = {
@@ -93,19 +93,19 @@ export const StyledButton = styled.button<ButtonProps>`
   align-items: center;
   transition-duration: 0.2s;
   padding: ${(props) =>
-    props.size && props.size === Size.small
+    props.size && props.size === SizeKey.small
       ? SizeValue.small
-      : props.size === Size.medium
+      : props.size === SizeKey.medium
       ? SizeValue.medium
-      : props.size === Size.large
+      : props.size === SizeKey.large
       ? SizeValue.large
       : SizeValue.small};
   font-size: ${(props) =>
-    props.size && props.size === Size.small
+    props.size && props.size === SizeKey.small
       ? FontSizeValue.small
-      : props.size === Size.medium
+      : props.size === SizeKey.medium
       ? FontSizeValue.medium
-      : props.size === Size.large
+      : props.size === SizeKey.large
       ? FontSizeValue.large
       : FontSizeValue.small};
   border-radius: 8px;

@@ -1,4 +1,4 @@
-export enum Size {
+export enum SizeKey {
   small = "small",
   medium = "medium",
   large = "large",

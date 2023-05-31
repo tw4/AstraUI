@@ -3,6 +3,8 @@ import { ButtonProps, ButtonVariant } from "./Button-types";
 import { StyledButton } from "./Button-styles";
 
 const Button: FC<ButtonProps> = ({
+  startIcon,
+  endIcon,
   fullWidth,
   size,
   children,
@@ -16,6 +18,8 @@ const Button: FC<ButtonProps> = ({
 }) => {
   return (
     <StyledButton
+      startIcon={startIcon}
+      endIcon={endIcon}
       disabled={disabled}
       size={size}
       fullWidth={fullWidth}
@@ -25,7 +29,9 @@ const Button: FC<ButtonProps> = ({
       _disabled={_disabled}
       variant={variant ? variant : ButtonVariant.primary}
       {...rest}>
+      {startIcon}
       {children}
+      {endIcon}
     </StyledButton>
   );
 };
