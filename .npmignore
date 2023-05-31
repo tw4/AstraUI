@@ -1,0 +1,3 @@
+.storybook/
+**/*.stories.tsx
+**/*.stories.mdx
