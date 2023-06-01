@@ -7,3 +7,11 @@ export type ElementProps = {
   _disabled?: CSSObject;
   fullWidth?: boolean;
 };
+
+export type ColorScheme = {
+  default: string;
+  hover: string;
+  focus: string;
+  textLight: string;
+  textDark: string;
+};
