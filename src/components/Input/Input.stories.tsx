@@ -12,4 +12,8 @@ const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   defaultValue: "Input",
+  onChange: (e) => {
+    console.log(e.currentTarget.value);
+  },
+  placeholder: "input",
 };
