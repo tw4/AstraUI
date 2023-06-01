@@ -1,27 +1,10 @@
 import styled from "styled-components";
 import { InputProps } from "./input-type";
-import { DefaultColorKey, DefaultColorValue } from "../../theme/theme";
-import { ThemePrimaryColor } from "../../theme/Colors";
+import { DefaultColorKey } from "../../theme/theme";
+import { colorSchemeHandler } from "../../theme/Colors";
 import { HTMLAttributes } from "react";
 
-const colorSchemeHandler = (color: any) => {
-  switch (color) {
-    case DefaultColorKey.green:
-      return DefaultColorValue.green;
-    case DefaultColorKey.orange:
-      return DefaultColorValue.orange;
-    case DefaultColorKey.purple:
-      return DefaultColorValue.purple;
-    case DefaultColorKey.red:
-      return DefaultColorValue.red;
-    case DefaultColorKey.yellow:
-      return DefaultColorKey.yellow;
-    default:
-      return ThemePrimaryColor.default;
-  }
-};
-
-export const StyledDiv = styled.div<InputProps>`
+export const StyleInputdDiv = styled.div<InputProps>`
   display: flex;
   flex-direction: row;
   justify-content: center;

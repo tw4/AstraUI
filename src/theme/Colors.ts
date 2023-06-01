@@ -1,5 +1,5 @@
 import { ColorScheme } from "../types";
-import { DefaultColorValue } from "./theme";
+import { DefaultColorKey, DefaultColorValue } from "./theme";
 
 export const ThemePrimaryColor: ColorScheme = {
   default: "#1846C7",
@@ -47,4 +47,21 @@ export const YellowColorScheme: ColorScheme = {
   focus: "#825B00",
   textLight: "#FFFFFF",
   textDark: "#000000",
+};
+
+export const colorSchemeHandler = (color: any) => {
+  switch (color) {
+    case DefaultColorKey.green:
+      return DefaultColorValue.green;
+    case DefaultColorKey.orange:
+      return DefaultColorValue.orange;
+    case DefaultColorKey.purple:
+      return DefaultColorValue.purple;
+    case DefaultColorKey.red:
+      return DefaultColorValue.red;
+    case DefaultColorKey.yellow:
+      return DefaultColorKey.yellow;
+    default:
+      return ThemePrimaryColor.default;
+  }
 };
