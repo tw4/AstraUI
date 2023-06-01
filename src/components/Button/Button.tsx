@@ -3,6 +3,7 @@ import { ButtonProps, ButtonVariant } from "./Button-types";
 import { StyledButton } from "./Button-styles";
 
 const Button: FC<ButtonProps> = ({
+  colorScheme,
   startIcon,
   endIcon,
   fullWidth,
@@ -18,6 +19,7 @@ const Button: FC<ButtonProps> = ({
 }) => {
   return (
     <StyledButton
+      colorScheme={colorScheme}
       startIcon={startIcon}
       endIcon={endIcon}
       disabled={disabled}
