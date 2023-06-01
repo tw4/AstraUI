@@ -5,13 +5,13 @@ export enum SizeKey {
 }
 
 export enum SizeValue {
-  small = "10px 16px",
-  medium = "12px 20px",
-  large = "14px 24px",
+  small = "0.313em 0.75em",
+  medium = "0.5em 1em",
+  large = "0.688em 1.25em",
 }
 
 export enum FontSizeValue {
-  small = "14px",
-  medium = "16px",
-  large = "18px",
+  small = "0.875rem",
+  medium = "1rem",
+  large = "1.125rem",
 }
