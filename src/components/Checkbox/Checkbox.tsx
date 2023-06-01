@@ -10,6 +10,7 @@ const Checkbox: FC<CheckboxProps> = ({
   disabled,
   colorScheme,
   fullWidth,
+  ...rest
 }) => {
   return (
     <StyledCheckbox
@@ -21,6 +22,7 @@ const Checkbox: FC<CheckboxProps> = ({
       _disabled={_disabled}
       _focus={_focus}
       _hover={_hover}
+      {...rest}
     />
   );
 };

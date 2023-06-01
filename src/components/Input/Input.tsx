@@ -14,6 +14,7 @@ const Input: FC<InputProps> = ({
   _disabled,
   _focus,
   _hover,
+  ...rest
 }) => {
   return (
     <StyleInputdDiv
@@ -28,6 +29,7 @@ const Input: FC<InputProps> = ({
         disabled={disabled}
         fullWidth={fullWidth}
         defaultValue={defaultValue}
+        {...rest}
       />
       {endIcon}
     </StyleInputdDiv>
