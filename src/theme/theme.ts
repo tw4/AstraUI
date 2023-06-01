@@ -1,7 +1,16 @@
-export enum ThemePrimaryColor {
-  default = "#9146ff",
-  hover = "#6e35e0",
-  focus = "#4d25b2",
-  textLight = "#FFFFFF",
-  textDark = "#000000",
+export enum DefaultColorKey {
+  purple = "purple",
+  green = "green",
+  red = "red",
+  orange = "orange",
+  yellow = "yellow",
+}
+
+export enum DefaultColorValue {
+  blue = "#0091FF",
+  purple = "#A50AFF",
+  green = "#22B217",
+  red = "#E02E2E",
+  orange = "#FA6400",
+  yellow = "#F7B500",
 }
