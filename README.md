@@ -1,4 +1,4 @@
-# Astra UI Kit 🌌
+# AstraUI 🌌
 
 Astra UI Kit is a comprehensive, easy-to-use UI component library for React applications, designed with TypeScript for robustness and type safety. Built upon styled-components, it provides a stellar collection of reusable components to equip developers with the tools they need to create out-of-this-world user interfaces.
 
