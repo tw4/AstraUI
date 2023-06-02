@@ -4,7 +4,7 @@ import { DefaultColorKey } from "../../theme/theme";
 import { colorSchemeHandler } from "../../theme/Colors";
 import { HTMLAttributes } from "react";
 
-export const StyleInputdDiv = styled.div<InputProps>`
+export const StyledInputdDiv = styled.div<InputProps>`
   display: flex;
   flex-direction: row;
   justify-content: center;

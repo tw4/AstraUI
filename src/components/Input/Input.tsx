@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleInputdDiv, StyledInput } from "./Input-styles";
+import { StyledInputdDiv, StyledInput } from "./Input-styles";
 import { FC } from "react";
 import { InputProps } from "./input-type";
 
@@ -18,7 +18,7 @@ const Input: FC<InputProps> = ({
   ...rest
 }) => {
   return (
-    <StyleInputdDiv
+    <StyledInputdDiv
       colorScheme={colorScheme}
       _active={_active}
       _disabled={_disabled}
@@ -34,7 +34,7 @@ const Input: FC<InputProps> = ({
         {...rest}
       />
       {endIcon}
-    </StyleInputdDiv>
+    </StyledInputdDiv>
   );
 };
 
