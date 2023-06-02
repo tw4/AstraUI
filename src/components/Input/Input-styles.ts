@@ -14,7 +14,7 @@ export const StyleInputdDiv = styled.div<InputProps>`
   background-color: white;
   width: ${(props) => (props.fullWidth ? "100%" : "fit-content")};
   border-radius: 6px;
-
+  ${(props) => (props.sx ? props.sx : "")}
   &:hover {
     ${(props) => (props._hover ? props._hover : null)}
   }

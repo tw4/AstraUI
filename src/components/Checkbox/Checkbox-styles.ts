@@ -4,7 +4,7 @@ import { ThemePrimaryColor, colorSchemeHandler } from "../../theme/Colors";
 
 export const StyledCheckbox = styled.input<CheckboxProps>`
   width: ${(props) => (props.fullWidth ? "100%" : "")};
-
+  ${(props) => (props.sx ? props.sx : "")}
   &:checked {
     accent-color: ${(props) => colorSchemeHandler(props.colorScheme)};
   }

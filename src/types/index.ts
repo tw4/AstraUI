@@ -5,6 +5,7 @@ export type ElementProps = {
   _active?: CSSObject;
   _focus?: CSSObject;
   _disabled?: CSSObject;
+  sx?: CSSObject;
   fullWidth?: boolean;
 };
 

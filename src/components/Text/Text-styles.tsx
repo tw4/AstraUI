@@ -7,7 +7,7 @@ export const StyledText = styled.p<TextProps>`
   font-size: ${(props) =>
     props.fontsize ? props.fontsize : FontSizeValue.medium};
   width: ${(props) => (props.fullWidth ? "100%" : "")};
-
+  ${(props) => (props.sx ? props.sx : "")}
   &:hover {
     ${(props) => (props._hover ? props._hover : null)}
   }

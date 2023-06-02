@@ -15,6 +15,7 @@ const Button: FC<ButtonProps> = ({
   _focus,
   _disabled,
   disabled,
+  sx,
   ...rest
 }) => {
   return (
@@ -29,6 +30,7 @@ const Button: FC<ButtonProps> = ({
       _active={_active}
       _focus={_focus}
       _disabled={_disabled}
+      sx={sx}
       variant={variant ? variant : ButtonVariant.primary}
       {...rest}>
       {startIcon}

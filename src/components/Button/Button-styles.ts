@@ -150,6 +150,7 @@ export const StyledButton = styled.button<ButtonProps>`
         ? variants(props.colorScheme).circle
         : variants().circle
       : null}
+  ${(props) => (props.sx ? props.sx : "")}
   &:hover {
     ${(props) => (props._hover ? props._hover : null)}
   }

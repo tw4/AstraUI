@@ -14,6 +14,7 @@ const Input: FC<InputProps> = ({
   _disabled,
   _focus,
   _hover,
+  sx,
   ...rest
 }) => {
   return (
@@ -23,6 +24,7 @@ const Input: FC<InputProps> = ({
       _disabled={_disabled}
       _focus={_focus}
       _hover={_hover}
+      sx={sx}
       fullWidth={fullWidth}>
       {startIcon}
       <StyledInput

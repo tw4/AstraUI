@@ -7,6 +7,7 @@ const Checkbox: FC<CheckboxProps> = ({
   _disabled,
   _focus,
   _hover,
+  sx,
   disabled,
   colorScheme,
   fullWidth,
@@ -22,6 +23,7 @@ const Checkbox: FC<CheckboxProps> = ({
       _disabled={_disabled}
       _focus={_focus}
       _hover={_hover}
+      sx={sx}
       {...rest}
     />
   );
