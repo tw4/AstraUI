@@ -14,6 +14,10 @@
     "UI",
     "astraui"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AstraUI/AstraUI"
+  },
   "scripts": {
     "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
