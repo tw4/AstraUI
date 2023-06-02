@@ -1,6 +1,6 @@
 {
   "name": "astra-ui-kit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AstraUI is a comprehensive, easy-to-use UI component library for React applications, built with TypeScript for robustness and type safety. Our library provides a stellar collection of reusable components designed to equip developers with the tools they need to create out-of-this-world user interfaces.",
   "keywords": [
     "react",
