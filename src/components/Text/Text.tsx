@@ -13,6 +13,7 @@ const Text: FC<TextProps> = ({
   fullWidth,
   fontsize,
   color,
+  ...rest
 }) => {
   return (
     <StyledText
@@ -23,7 +24,8 @@ const Text: FC<TextProps> = ({
       _disabled={_disabled}
       _focus={_focus}
       _hover={_hover}
-      sx={sx}>
+      sx={sx}
+      {...rest}>
       {children}
     </StyledText>
   );
