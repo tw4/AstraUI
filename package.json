@@ -1,6 +1,6 @@
 {
-  "name": "@mertsabinov-ui",
-  "version": "1.0.37",
+  "name": "mertsabinov-ui",
+  "version": "0.0.3",
   "description": "test",
   "scripts": {
     "build": "rollup -c",

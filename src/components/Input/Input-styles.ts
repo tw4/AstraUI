@@ -14,6 +14,7 @@ export const StyledInputdDiv = styled.div<InputProps>`
   background-color: white;
   width: ${(props) => (props.fullWidth ? "100%" : "fit-content")};
   border-radius: 6px;
+
   ${(props) => (props.sx ? props.sx : "")}
   &:hover {
     ${(props) => (props._hover ? props._hover : null)}
@@ -36,7 +37,19 @@ export const StyledInput = styled.input<InputProps>`
   outline: none;
   padding: 0.063em 0.125em 0.063em 0.125em;
   width: ${(props) => (props.fullWidth ? "100%" : "")};
+  background-color: white;
 
+  ${(props) => (props.sx ? props.sx : "")}
+  &:hover {
+    ${(props) => (props._hover ? props._hover : null)}
+  }
+  &:focus-within {
+    ${(props) => (props._hover ? props._hover : null)}
+    border-color: ${(props) => colorSchemeHandler(props.colorScheme)};
+  }
+  &:active {
+    ${(props) => (props._active ? props._active : null)}
+  }
   &:disabled {
     cursor: not-allowed;
     ${(props) => (props._disabled ? props._disabled : null)}

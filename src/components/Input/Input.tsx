@@ -25,9 +25,15 @@ const Input: FC<InputProps> = ({
       _focus={_focus}
       _hover={_hover}
       sx={sx}
-      fullWidth={fullWidth}>
+      fullWidth={fullWidth}
+      {...rest}>
       {startIcon}
       <StyledInput
+        _active={_active}
+        _disabled={_active}
+        _focus={_focus}
+        _hover={_hover}
+        sx={sx}
         disabled={disabled}
         fullWidth={fullWidth}
         defaultValue={defaultValue}
