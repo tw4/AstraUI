@@ -31,14 +31,14 @@ yarn add @types/styled-components
 Here is a basic usage example:
 
 ```tsx
-import { Button } from "astra-ui-kit";
+import { Button, Box } from "astra-ui-kit";
 import "./App.css";
 
 const App = () => {
   return (
-    <div className="App">
+    <Box>
       <Button>Test Button</Button>
-    </div>
+    </Box>
   );
 };
 
