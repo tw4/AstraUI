@@ -1,17 +1,12 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { ElementProps } from "../../types";
-import { DefaultColorKey } from "../../theme/theme";
+import { ColorProps } from "styled-system";
 
-export type InputProps = HTMLAttributes<HTMLInputElement> &
-  ElementProps & {
-    colorScheme?:
-      | "purple"
-      | "green"
-      | "red"
-      | "orange"
-      | "yellow"
-      | DefaultColorKey;
-    disabled?: boolean;
-    startIcon?: ReactNode;
-    endIcon?: ReactNode;
-  };
+export interface InputProps
+  extends Omit<HTMLAttributes<HTMLInputElement>, "color">,
+    ElementProps,
+    Omit<ColorProps, "bg"> {
+  startIcon?: ReactNode;
+  endIcon?: ReactNode;
+  backgroundColor?: string;
+}

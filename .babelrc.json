@@ -12,5 +12,16 @@
     "@babel/preset-typescript",
     "@babel/preset-react"
   ],
-  "plugins": ["babel-plugin-styled-components"] // add styled-component
+  "plugins": [
+    "babel-plugin-styled-components",
+    [
+      "@emotion/babel-plugin",
+      {
+        "sourceMap": false,
+        "autoLabel": "dev-only",
+        "labelFormat": "[local]",
+        "cssPropOptimization": true
+      }
+    ]
+  ]
 }

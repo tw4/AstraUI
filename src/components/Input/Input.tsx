@@ -1,46 +1,30 @@
-import React from "react";
-import { StyledInputdDiv, StyledInput } from "./Input-styles";
-import { FC } from "react";
+import React, { FC } from "react";
+import { StyledInput, StyledInputDiv } from "./Input-styles";
 import { InputProps } from "./input-type";
 
 const Input: FC<InputProps> = ({
-  endIcon,
+  backgroundColor,
   startIcon,
-  disabled,
-  defaultValue,
-  colorScheme,
-  fullWidth,
-  _active,
-  _disabled,
-  _focus,
+  endIcon,
   _hover,
+  _active,
+  _focus,
+  _disabled,
   sx,
   ...rest
 }) => {
   return (
-    <StyledInputdDiv
-      colorScheme={colorScheme}
+    <StyledInputDiv
       _active={_active}
-      _disabled={_disabled}
       _focus={_focus}
+      _disabled={_disabled}
       _hover={_hover}
       sx={sx}
-      fullWidth={fullWidth}
-      {...rest}>
-      {startIcon}
-      <StyledInput
-        _active={_active}
-        _disabled={_active}
-        _focus={_focus}
-        _hover={_hover}
-        sx={sx}
-        disabled={disabled}
-        fullWidth={fullWidth}
-        defaultValue={defaultValue}
-        {...rest}
-      />
-      {endIcon}
-    </StyledInputdDiv>
+      backgroundColor={backgroundColor}>
+      <span>{startIcon}</span>
+      <StyledInput backgroundColor={backgroundColor} {...rest} />
+      <span>{endIcon}</span>
+    </StyledInputDiv>
   );
 };
 

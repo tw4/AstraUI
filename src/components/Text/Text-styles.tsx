@@ -1,12 +1,8 @@
 import styled from "styled-components";
 import { TextProps } from "./Text-types";
-import { FontSizeValue } from "../../theme/theme-enum";
+import { color, typography } from "styled-system";
 
 export const StyledText = styled.p<TextProps>`
-  color: ${(props) => (props.color ? props.color : "black")};
-  font-size: ${(props) =>
-    props.fontsize ? props.fontsize : FontSizeValue.medium};
-  width: ${(props) => (props.fullWidth ? "100%" : "")};
   ${(props) => (props.sx ? props.sx : "")}
   &:hover {
     ${(props) => (props._hover ? props._hover : null)}
@@ -21,4 +17,7 @@ export const StyledText = styled.p<TextProps>`
     cursor: not-allowed;
     ${(props) => (props._disabled ? props._disabled : null)}
   }
+
+  ${color}
+  ${typography}
 `;

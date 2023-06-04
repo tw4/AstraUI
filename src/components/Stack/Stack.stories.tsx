@@ -12,15 +12,13 @@ export default {
 const Template: ComponentStory<typeof Stack> = (args) => <Stack {...args} />;
 export const Default = Template.bind({});
 Default.args = {
-  sx: {
-    height: "10vh",
-    backgroundColor: "lightgray",
-    padding: "10px",
-  },
   children: (
     <>
       <Button>btn 1</Button>
       <Button>btn 2</Button>
     </>
   ),
+  bg: "grey",
+  p: "10px",
+  spacingY: "10px",
 };

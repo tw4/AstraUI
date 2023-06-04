@@ -1,7 +1,4 @@
-import { HTMLAttributes, ReactNode } from "react";
+import { SpaceProps, ColorProps } from "styled-system";
 import { ElementProps } from "../../types";
 
-export type BoxProps = HTMLAttributes<HTMLDivElement> &
-  ElementProps & {
-    children?: ReactNode;
-  };
+export interface BoxProps extends SpaceProps, ColorProps, ElementProps {}

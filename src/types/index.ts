@@ -6,7 +6,6 @@ export type ElementProps = {
   _focus?: CSSObject;
   _disabled?: CSSObject;
   sx?: CSSObject;
-  fullWidth?: boolean;
 };
 
 export type ColorScheme = {

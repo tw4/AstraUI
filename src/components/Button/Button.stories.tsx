@@ -17,17 +17,14 @@ Default.args = {
 export const ghost = Template.bind({});
 ghost.args = {
   children: "Button",
-  variant: "ghost",
 };
 
 export const text = Template.bind({});
 text.args = {
   children: "Button",
-  variant: "text",
 };
 
 export const circle = Template.bind({});
 circle.args = {
   children: "+",
-  variant: "circle",
 };
