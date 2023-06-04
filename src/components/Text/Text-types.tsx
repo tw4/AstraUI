@@ -1,9 +1,13 @@
 import { HTMLAttributes } from "react";
 import { ElementProps } from "../../types";
-import { ReactNode } from "react";
+import { ColorProps, TypographyProps } from "styled-system";
+import { StyledProps } from "styled-components";
 
-export type TextProps = HTMLAttributes<HTMLParagraphElement> &
-  ElementProps & {
-    children: ReactNode;
-    fontsize?: string;
-  };
+type ModifiedStyledProps = Omit<StyledProps<any>, "color">;
+
+export interface TextProps
+  extends HTMLAttributes<HTMLParagraphElement>,
+    ElementProps,
+    TypographyProps,
+    Omit<ColorProps, "color">,
+    ModifiedStyledProps {}

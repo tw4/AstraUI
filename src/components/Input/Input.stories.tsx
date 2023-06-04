@@ -15,5 +15,7 @@ Default.args = {
   onChange: (e) => {
     console.log(e.currentTarget.value);
   },
-  placeholder: "input",
+  placeholder: "Input",
+  startIcon: "🔎",
+  endIcon: "🔍",
 };

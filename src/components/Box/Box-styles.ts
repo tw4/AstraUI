@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { BoxProps } from "./Box-types";
+import { color, space } from "styled-system";
 
 export const StyledBox = styled.div<BoxProps>`
-  width: ${(props) => (props.fullWidth ? "100%" : "")};
   ${(props) => (props.sx ? props.sx : "")}
   &:hover {
     ${(props) => (props._hover ? props._hover : null)}
@@ -17,4 +17,7 @@ export const StyledBox = styled.div<BoxProps>`
     cursor: not-allowed;
     ${(props) => (props._disabled ? props._disabled : null)}
   }
+
+  ${space}
+  ${color}
 `;
