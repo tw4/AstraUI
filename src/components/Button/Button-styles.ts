@@ -3,7 +3,7 @@ import { color, size, typography } from "styled-system";
 import { ButtonProps } from "./Button-types";
 import { ThemePrimaryColor } from "../../theme/Colors";
 
-const StyledButton = styled.button<ButtonProps>`
+export const StyledButton = styled.button<ButtonProps>`
   cursor: pointer;
   border: none;
   display: flex;
@@ -14,6 +14,13 @@ const StyledButton = styled.button<ButtonProps>`
   background-color: ${ThemePrimaryColor.default};
   color: ${ThemePrimaryColor.textLight};
   border-radius: 6px;
+
+  &:hover {
+    background-color: ${ThemePrimaryColor.hover};
+  }
+  &:focus {
+    background-color: ${ThemePrimaryColor.focus};
+  }
 
   ${(props) => (props.sx ? props.sx : "")}
   &:hover {
@@ -35,4 +42,17 @@ const StyledButton = styled.button<ButtonProps>`
   ${color}
 `;
 
-export default StyledButton;
+export const StyledGhostButton = styled(StyledButton)`
+  background-color: transparent;
+  color: ${ThemePrimaryColor.default};
+  border: 1px solid ${ThemePrimaryColor.default};
+
+  &:hover {
+    background-color: ${ThemePrimaryColor.hover};
+    color: ${ThemePrimaryColor.textLight};
+  }
+  &:focus {
+    background-color: ${ThemePrimaryColor.focus};
+    color: ${ThemePrimaryColor.textLight};
+  }
+`;

@@ -1,19 +1,7 @@
 {
-  "name": "astra-ui-kit",
-  "version": "0.0.7",
-  "description": "AstraUI is a comprehensive, easy-to-use UI component library for React applications, built with TypeScript for robustness and type safety. Our library provides a stellar collection of reusable components designed to equip developers with the tools they need to create out-of-this-world user interfaces.",
-  "keywords": [
-    "react",
-    "ui-library",
-    "typescript",
-    "components",
-    "front-end",
-    "web-development",
-    "user-interface",
-    "react-components",
-    "UI",
-    "astraui"
-  ],
+  "name": "mertsabinov-ui",
+  "version": "0.0.12",
+  "keywords": [],
   "scripts": {
     "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
@@ -67,7 +55,7 @@
   "dependencies": {
     "@emotion/babel-plugin": "^11.11.0",
     "stream-browserify": "^3.0.0",
-    "styled-components": "^4.3.2",
+    "styled-components": "^4.4.1",
     "styled-system": "^5.1.5"
   }
 }

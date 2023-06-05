@@ -10,11 +10,5 @@ export interface ButtonProps
     SizeProps {
   startIcon?: ReactNode;
   endIcon?: ReactNode;
-}
-
-export enum ButtonVariant {
-  primary = "primary",
-  ghost = "ghost",
-  text = "text",
-  circle = "circle",
+  variant?: "primary" | "ghost";
 }

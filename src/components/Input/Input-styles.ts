@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { InputProps } from "./input-type";
+import { InputProps } from "./input-types";
 import { color } from "styled-system";
 
 export const StyledInputDiv = styled.div<InputProps>`

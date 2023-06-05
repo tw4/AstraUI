@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { StackProps } from "./Stack-types";
-import { color, flexbox, space, size, grid } from "styled-system";
+import { color, flexbox, space, size, grid, layout } from "styled-system";
 
 export const StyledStack = styled.div<StackProps>`
+  display: flex;
   ${(props) => (props.sx ? props.sx : "")}
   &:hover {
     ${(props) => (props._hover ? props._hover : null)}
@@ -27,4 +28,5 @@ export const StyledStack = styled.div<StackProps>`
   ${color}
   ${size}
   ${grid}
+  ${layout}
 `;

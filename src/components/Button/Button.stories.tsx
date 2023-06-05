@@ -17,14 +17,5 @@ Default.args = {
 export const ghost = Template.bind({});
 ghost.args = {
   children: "Button",
-};
-
-export const text = Template.bind({});
-text.args = {
-  children: "Button",
-};
-
-export const circle = Template.bind({});
-circle.args = {
-  children: "+",
+  variant: "ghost",
 };

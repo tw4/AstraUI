@@ -6,6 +6,7 @@ import {
   SpaceProps,
   SizeProps,
   GridProps,
+  LayoutProps,
 } from "styled-system";
 import { StyledProps } from "styled-components";
 
@@ -17,6 +18,7 @@ export interface StackProps
     SpaceProps,
     SizeProps,
     GridProps,
+    LayoutProps,
     FlexboxProps {
   spacingY?: string;
   spacingX?: string;

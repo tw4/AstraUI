@@ -3,8 +3,12 @@ import { TextProps } from "./Text-types";
 import React from "react";
 import { StyledText } from "./Text-styles";
 
-const Text: FC<TextProps> = ({ children, ...rest }) => {
-  return <StyledText {...rest}>{children}</StyledText>;
+const Text: FC<TextProps> = ({ color, children, ...rest }) => {
+  return (
+    <StyledText color={color as string} {...rest}>
+      {children}
+    </StyledText>
+  );
 };
 
 export default Text;

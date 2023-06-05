@@ -1,14 +1,30 @@
 import React, { FC } from "react";
 import { ButtonProps } from "./Button-types";
-import StyledButton from "./Button-styles";
+import { StyledButton, StyledGhostButton } from "./Button-styles";
 
-const Button: FC<ButtonProps> = ({ startIcon, endIcon, children, ...rest }) => {
+const Button: FC<ButtonProps> = ({
+  variant,
+  startIcon,
+  endIcon,
+  children,
+  ...rest
+}) => {
   return (
-    <StyledButton startIcon={startIcon} endIcon={endIcon} {...rest}>
-      <span> {startIcon}</span>
-      {children}
-      <span> {endIcon}</span>
-    </StyledButton>
+    <>
+      {variant && variant === "ghost" ? (
+        <StyledGhostButton variant={variant} {...rest}>
+          {startIcon && startIcon}
+          {children}
+          {endIcon && endIcon}
+        </StyledGhostButton>
+      ) : (
+        <StyledButton variant={variant} {...rest}>
+          {startIcon && startIcon}
+          {children}
+          {endIcon && endIcon}
+        </StyledButton>
+      )}
+    </>
   );
 };
 

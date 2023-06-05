@@ -14,11 +14,11 @@ export const Default = Template.bind({});
 Default.args = {
   children: (
     <>
-      <Button>btn 1</Button>
-      <Button>btn 2</Button>
+      <Button>Button 1</Button>
+      <Button>Button 2</Button>
     </>
   ),
   bg: "grey",
   p: "10px",
-  spacingY: "10px",
+  spacingX: "10px",
 };

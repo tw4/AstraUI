@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { TextProps } from "./Text-types";
 import { color, typography } from "styled-system";
 
-export const StyledText = styled.p<TextProps>`
+export const StyledText = styled.text<TextProps>`
   ${(props) => (props.sx ? props.sx : "")}
   &:hover {
     ${(props) => (props._hover ? props._hover : null)}

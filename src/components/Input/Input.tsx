@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { StyledInput, StyledInputDiv } from "./Input-styles";
-import { InputProps } from "./input-type";
+import { InputProps } from "./input-types";
 
 const Input: FC<InputProps> = ({
   backgroundColor,
@@ -11,6 +11,7 @@ const Input: FC<InputProps> = ({
   _focus,
   _disabled,
   sx,
+  color,
   ...rest
 }) => {
   return (
@@ -22,7 +23,11 @@ const Input: FC<InputProps> = ({
       sx={sx}
       backgroundColor={backgroundColor}>
       <span>{startIcon}</span>
-      <StyledInput backgroundColor={backgroundColor} {...rest} />
+      <StyledInput
+        color={color as string}
+        backgroundColor={backgroundColor}
+        {...rest}
+      />
       <span>{endIcon}</span>
     </StyledInputDiv>
   );
