@@ -5,25 +5,13 @@ Astra UI Kit is a comprehensive, easy-to-use UI component library for React appl
 ## Installation
 
 ```bash
-npm install astra-ui-kit
+npm install astra-ui-kit @types/styled-components @types/styled-system
 ```
 
 or if you prefer using yarn:
 
 ```bash
-yarn add astra-ui-kit
-```
-
-### dependence
-
-```bash
-npm install @types/styled-components
-```
-
-or if you prefer using yarn:
-
-```bash
-yarn add @types/styled-components
+yarn add astra-ui-kit @types/styled-components @types/styled-system
 ```
 
 ## Example Usage
@@ -32,7 +20,6 @@ Here is a basic usage example:
 
 ```tsx
 import { Button, Box } from "astra-ui-kit";
-import "./App.css";
 
 const App = () => {
   return (
