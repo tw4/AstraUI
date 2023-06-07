@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color, size, typography } from "styled-system";
+import { color, size, space, typography } from "styled-system";
 import { ButtonProps } from "./Button-types";
 import { ThemePrimaryColor } from "../../theme/Colors";
 
@@ -10,6 +10,7 @@ export const StyledButton = styled.button<ButtonProps>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: fit-content;
   padding: 8px 16px;
   background-color: ${ThemePrimaryColor.default};
   color: ${ThemePrimaryColor.textLight};
@@ -40,6 +41,7 @@ export const StyledButton = styled.button<ButtonProps>`
   ${size}
   ${typography}
   ${color}
+  ${space}
 `;
 
 export const StyledGhostButton = styled(StyledButton)`

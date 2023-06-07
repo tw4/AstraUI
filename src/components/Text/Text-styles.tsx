@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { TextProps } from "./Text-types";
-import { color, typography } from "styled-system";
+import { color, space, typography } from "styled-system";
 
 export const StyledText = styled.text<TextProps>`
   ${(props) => (props.sx ? props.sx : "")}
@@ -20,4 +20,5 @@ export const StyledText = styled.text<TextProps>`
 
   ${color}
   ${typography}
+  ${space}
 `;

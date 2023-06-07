@@ -1,6 +1,6 @@
 import { HTMLAttributes } from "react";
 import { ElementProps } from "../../types";
-import { ColorProps, TypographyProps } from "styled-system";
+import { ColorProps, SpaceProps, TypographyProps } from "styled-system";
 import { StyledProps } from "styled-components";
 
 type ModifiedStyledProps = Omit<StyledProps<any>, "color">;
@@ -10,4 +10,5 @@ export interface TextProps
     ElementProps,
     TypographyProps,
     Omit<ColorProps, "color">,
-    ModifiedStyledProps {}
+    ModifiedStyledProps,
+    SpaceProps {}

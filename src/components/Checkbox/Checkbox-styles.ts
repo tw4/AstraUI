@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { CheckboxProps } from "./Checkbox-types";
 import { colorSchemeHandler } from "../../theme/Colors";
+import { space } from "styled-system";
 
 export const StyledCheckbox = styled.input<CheckboxProps>`
   ${(props) => (props.sx ? props.sx : "")}
@@ -20,4 +21,6 @@ export const StyledCheckbox = styled.input<CheckboxProps>`
     cursor: not-allowed;
     ${(props) => (props._disabled ? props._disabled : null)}
   }
+
+  ${space}
 `;

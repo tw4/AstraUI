@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { InputProps } from "./input-types";
-import { color } from "styled-system";
+import { color, space } from "styled-system";
 
 export const StyledInputDiv = styled.div<InputProps>`
   display: flex;
@@ -28,6 +28,7 @@ export const StyledInputDiv = styled.div<InputProps>`
   }
 
   ${color}
+  ${space}
 `;
 
 export const StyledInput = styled.input<InputProps>`
